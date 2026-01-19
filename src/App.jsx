@@ -1,5 +1,18 @@
 import React, { useState, useEffect } from 'react';
 
+// --- FORCE LOAD TAILWIND CSS IMMEDIATELY ---
+// This runs as soon as the file loads, ensuring styles are available faster.
+if (typeof document !== 'undefined') {
+  const existingScript = document.getElementById('tailwind-cdn-script');
+  if (!existingScript) {
+    const script = document.createElement('script');
+    script.src = "https://cdn.tailwindcss.com";
+    script.id = "tailwind-cdn-script";
+    script.async = true;
+    document.head.appendChild(script);
+  }
+}
+
 // --- Inline Icon Components (Replaces lucide-react dependency) ---
 const IconBase = ({ children, color, size = 24, className = "" }) => (
   <svg 
@@ -39,18 +52,6 @@ const Waves = (props) => <IconBase {...props}><path d="M2 6c.6.5 1.2 1 2.5 1C7 7
 const Cloud = (props) => <IconBase {...props}><path d="M17.5 19c0-1.7-1.3-3-3-3h-1.1c-.5-2.3-2.5-4-4.9-4-2.9 0-5.3 2.1-5.8 5H2.5C1.1 17 0 18.1 0 19.5S1.1 22 2.5 22h15c1.7 0 3-1.3 3-3z"/></IconBase>;
 
 const App = () => {
-  // --- INJECT TAILWIND CSS AUTOMATICALLY ---
-  // This hook ensures that the styling library loads even if you couldn't install it via npm.
-  useEffect(() => {
-    const existingScript = document.querySelector('script[src="https://cdn.tailwindcss.com"]');
-    if (!existingScript) {
-      const script = document.createElement('script');
-      script.src = "https://cdn.tailwindcss.com";
-      script.async = true;
-      document.head.appendChild(script);
-    }
-  }, []);
-
   const [activeTab, setActiveTab] = useState('diu-classic');
 
   // Tab Configuration
