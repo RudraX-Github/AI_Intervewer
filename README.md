@@ -4,8 +4,6 @@ AI Interviewer Pro is an interactive, voice-enabled mock interview application. 
 
 📸 Demo & Screenshots
 
-(If you are hosting this on GitHub, you can link your images and videos here)
-
 App Interface: https://github.com/RudraX-Github/AI_Intervewer/blob/main/front.png
 
 Video Demonstration: Watch the Demo Video
