@@ -4,7 +4,7 @@ AI Interviewer Pro is an interactive, voice-enabled mock interview application. 
 
 📸 Demo & Screenshots
 
-App Interface: https://github.com/RudraX-Github/AI_Intervewer/blob/main/front.png
+App Interface:
 
 Video Demonstration: Watch the Demo Video
 
@@ -66,8 +66,8 @@ Step-by-Step Guide
 
 1. Clone the repository:
 
-git clone [https://github.com/your-username/ai-interviewer-pro.git](https://github.com/your-username/ai-interviewer-pro.git)
-cd ai-interviewer-pro
+git clone [https://github.com/RudraX-Github/AI_Intervewer.git](https://github.com/RudraX-Github/AI_Intervewer.git)
+cd AI_Intervewer
 
 
 2. Create and activate a virtual environment (Recommended):
@@ -86,7 +86,7 @@ pip install -r requirements.txt
 
 4. Set up your API Key:
 
-Note: Avoid hardcoding your API key directly into the script to prevent leaks. * You can configure the app to read from an environment variable or simply paste your key into the designated sidebar input within the Streamlit UI once the app is running.
+Note: Avoid hardcoding your API key directly into the script to prevent leaks. You can configure the app to read from an environment variable or simply paste your key into the designated sidebar input within the Streamlit UI once the app is running.
 
 5. Run the application:
 
@@ -117,6 +117,7 @@ Proceed: Continue to the next question until the session is complete!
 ├── requirements.txt       # Python dependencies
 ├── gen_bot.log            # Automated logging file for API/App events
 ├── front.png              # UI Screenshot
+├── AI Interviewer.mp4     # Demo Video
 └── README.md              # Project documentation
 
 
